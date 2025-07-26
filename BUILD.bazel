@@ -1,0 +1,11 @@
+cc_library(
+    name = "teensy41",
+    srcs = [
+        "//teensy:startup.c",
+        "//teensy:bootdata.c",
+    ],
+    hdrs = ["include/imxrt1062.h"],
+    strip_include_prefix = "/include",
+    linkstatic = True,
+    visibility = ["//visibility:public"],
+)
